@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.container_notice {
+  max-width: 1200px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.search-bar {
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.page-links {
+  display: flex;
+}
+
+.page-links a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.page-links a.active {
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #32CD32;
+}
+
+.search_button {
+  border: 0;
+  background-color: transparent;
+}
+
+.login-btn {
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-btn-home {
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.5s ease;
+}
+
+.login_page {
+  z-index: 21;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.login_page.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.login_close {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-left: 100%;
+  margin-bottom: auto;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.login_about {
+  padding-bottom: 10px;
+}
+
+.login_notice{
+  display: flex;
+  background-color: gainsboro;
+  border-radius: 10px;
+  text-align: left;
+  width: 300px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.notice_header {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.notice_icon {
+  padding-top: 2.3px;
+  padding-right: 5px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 100;
+  width: 250px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+.banner-container {
+  margin-top: 90px;
+  background-color: #2da834;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-section {
+  margin-top: 90px;
+  background-color: #2da834;
+  width: auto;
+  height: auto;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.banner p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.playlist-container {
+  display: flex;
+  gap: 20px;
+}
+
+.playlist-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 220px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.playlist-card-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.highlight_login {
+  color: #2da834;
+}
+
+.google_icon {
+  padding-top: 5px;
+}
