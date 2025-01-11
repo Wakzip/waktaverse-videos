@@ -42,11 +42,14 @@ export default function HomePage() {
                 <p><br></br>아래 버튼으로 로그인하고,<br></br>Waktaverse Videos의 모든 기능을 이용해보세요!</p>
               </div>
               <button onClick={clickLogin} className="login-home">
-                <CiLogin className="login-icon" /> 로그인
+                <strong>
+                  <CiLogin className="login-icon" /> 로그인
+                </strong>
               </button>
             </div>
-            <img alt="배너 이미지" className='home_banner_picture'/>
+            <img src="/wakta_videos_home_banner.png" alt="배너 이미지" className='home_banner_picture'/>
           </section>
+          
         </>
       )}
       {showLoginModal && <LoginModal show={showLoginModal} clickLogin={clickLogin} />}
