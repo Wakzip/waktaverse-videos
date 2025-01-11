@@ -1,9 +1,19 @@
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from './scripts/navbar';
 import ClientLayout from './client-layout';
 
-const inter = Inter({ subsets: ['latin'] });
+const NotoBold = localFont({ 
+  src: '../../public/fonts/NotoSansKR-Bold.ttf',
+  name: 'Noto Sans KR',
+  weight: '400 700',
+ });
+
+const Noto = localFont({ 
+  src: '../../public/fonts/NotoSansKR-VariableFont_wght.ttf',
+  name: 'Noto Sans KR',
+  weight: '400 700',
+});
 
 export const metadata = {
   title: 'Waktaverse Videosㅣ함께 만들어 가는 왁타버스 생활',
@@ -22,11 +32,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={Noto.className}>
         <ClientLayout>
-          <div className="container">
-              {children}
-          </div>
+                {children}
         </ClientLayout>
       </body>
     </html>

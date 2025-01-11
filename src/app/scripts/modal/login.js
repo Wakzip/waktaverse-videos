@@ -21,7 +21,7 @@ export default function LoginModal({show, clickLogin}) {
                 </div>
               </div>
               <div>
-                <button onClick={() => signIn('google')} className="login-btn">
+                <button onClick={() => signIn('google')} className="login-btn_google">
                   <FaGoogle className="login-icon" /> Google로 로그인
                 </button>
               </div>

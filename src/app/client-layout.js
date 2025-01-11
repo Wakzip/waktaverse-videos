@@ -7,9 +7,7 @@ export default function ClientLayout({ children }) {
   return (
     <SessionProvider>
       <Navbar />
-      <div className="page-content">
-        {children}
-      </div>
+          {children}
     </SessionProvider>
   );
 } 
