@@ -51,7 +51,7 @@ export default function HomePage() {
             <img src="/wakta_videos_home_banner.png" alt="배너 이미지" className='home_banner_picture'/>
           </section>
           <section className="video">
-            
+            <h1 className='video_section_title'>영상</h1>
           </section>
           <section className="playlist">
             
@@ -62,7 +62,6 @@ export default function HomePage() {
               <p className='madeby'><strong>Copyright ⓒ Team WakzipㆍWaktaverse Videos.</strong></p>
               <p className='info_service'>Waktaverse Videos는 왁타버스에서 제공하는 서비스가 아닙니다.</p>
               <p className='info_contact_mail'><a href='mailto:contact@wakzip.kr?subject=[문의]?body=문의를 작성하시고 전송하시면 Team Wakzip 서비스 팀으로 자동 전송됩니다.'>[문의] contact@wakzip.kr</a></p>
-              <InfoRender />
             </div>
           </footer>
         </>
