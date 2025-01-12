@@ -41,6 +41,45 @@ a {
   margin-right: 5px;
 }
 
+.footer-section {
+  justify-items: left;
+  background-color: white;
+  width: 100%;
+  height: 290px;
+}
+
+.footer-logo {
+  width: 250px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.madeby {
+  font-size: 15px;
+  color: #646464;
+  margin-left: 60px;
+}
+
+.info_service {
+  font-size: 14px;
+  color: #646464;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.info_contact_mail {
+  font-size: 14px;
+  color: #646464;
+  margin-left: 60px;
+}
+
+.info_rander {
+  font-size: 14px;
+  color: #646464;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
