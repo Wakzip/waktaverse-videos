@@ -7,7 +7,7 @@ export default function RenderInfo() {
 
   useEffect(() => {
     async function fetchRenderInfo() {
-      const res = await fetch('https://waktaverse-videos.vercel.app/api/client-info');
+      const res = await fetch('/api/client-info');
       const data = await res.json();
       setInfo(data);
     }

@@ -51,7 +51,7 @@ export default function HomePage() {
             <img src="/wakta_videos_home_banner.png" alt="배너 이미지" className='home_banner_picture'/>
           </section>
           <section className="video">
-
+            
           </section>
           <section className="playlist">
             
