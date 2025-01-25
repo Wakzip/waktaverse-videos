@@ -4,6 +4,7 @@ import { FaGoogle } from "react-icons/fa";
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { CiCircleInfo } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import { FaDiscord } from "react-icons/fa";
  
 export default function LoginModal({show, clickLogin}) {
   return (
@@ -23,6 +24,11 @@ export default function LoginModal({show, clickLogin}) {
               <div>
                 <button onClick={() => signIn('google')} className="login-btn_google">
                   <FaGoogle className="login-icon" /> Google로 로그인
+                </button>
+              </div>
+              <div>
+                <button onClick={() => signIn('discord')} className="login-btn_discord">
+                  <FaDiscord className="login-icon" /> Discord로 로그인
                 </button>
               </div>
             </div>

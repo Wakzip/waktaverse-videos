@@ -175,6 +175,16 @@ a {
   cursor: pointer;
 }
 
+.login-btn_discord {
+  background-color: #1900ff;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 90px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .login-btn-home {
   background-color: #32CD32;
   color: white;
