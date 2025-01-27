@@ -24,7 +24,7 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
-          <img src="/waktaverse_videos_new_logo.png" width="50px" alt="설명" />
+          <a href='/'><img src="/waktaverse_videos_new_logo.png" width="50px" alt="설명"/></a>
         </div>
         <div className="right-section">
           <div className="page-links">
@@ -46,6 +46,7 @@ export default function Navbar() {
                 {showDropdown && (
                   <div className="dropdown-menu">
                     <span className="dropdown-item">{session.user.name}</span>
+                    <span className="dropdown-item"><a href='/setting'>설정</a></span>
                     <button onClick={() => signOut()} className="dropdown-item">
                       <CiLogout className="dropdown-icon" /> 로그아웃
                     </button>

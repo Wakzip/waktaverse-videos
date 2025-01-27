@@ -28,9 +28,39 @@ a {
   background-color: #78d37c;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 510px;
+  margin-top: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #83c0ac;
+}
+
+.setting_home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 610px;
+  margin-top: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #78d37c;
+}
+
 .home_banner_picture {
   width: 1000px;
   height: 500px;
+  margin-top: -10px;
+}
+
+.setting_home_banner_picture {
+  width: 1500px;
+  height: 600px;
   margin-top: -10px;
 }
 
@@ -46,6 +76,7 @@ a {
   height: 100px;
   background-color: white;
   justify-items: left;
+  text-align: left;
   display: flex;
 }
 
@@ -53,6 +84,11 @@ a {
   font-size: 30px;
   margin-left: 50px;
   margin-top: 20px;
+}
+
+.video_section_subtitle {
+  margin-left: 50px;
+  margin-top: 5px;
 }
 
 .footer-section {
@@ -170,7 +206,7 @@ a {
   background-color: #32CD32;
   color: white;
   border: none;
-  padding: 10px 90px;
+  padding: 10px 70px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -180,9 +216,19 @@ a {
   color: white;
   border: none;
   margin-top: 10px;
-  padding: 10px 90px;
+  padding: 10px 70px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.login-btn_naver {
+  background-color: green;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 74.5px;
+  border-radius: 10px;
+  pointer-events: none;
 }
 
 .login-btn-home {
@@ -302,6 +348,20 @@ a {
 }
 
 .banner-container {
+  background-color: #78d37c;
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.banner-container_logined {
+  background-color: #83c0ac;
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.banner-container_setting {
   background-color: #78d37c;
   width: 100%;
   text-align: left;

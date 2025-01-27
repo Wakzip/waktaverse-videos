@@ -4,11 +4,4 @@ import Discord from "next-auth/providers/discord"
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google, Discord],
-  callbacks: {
-    async redirect({ url, baseUrl }) {
-      if (url.startsWith("/")) return `${baseUrl}${url}`
-      
-      return baseUrl
-    }
-  },
 })
