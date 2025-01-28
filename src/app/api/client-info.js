@@ -1,6 +1,6 @@
-/* export default function handler(req, res) {
-    const renderId = req.headers['x-vercel-id'] || 'No ID provided';
-    const renderTimestamp = new Date().toISOString();
-  
-    res.status(200).json({ renderId, renderTimestamp });
-} */
+await fetch("https://api.vercel.com/v4/aliases/waktaverse-videos.vercel.app", {
+    "headers": {
+      "Authorization": "Bearer <TOKEN>"
+    },
+    "method": "get"
+  })
