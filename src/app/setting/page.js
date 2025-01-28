@@ -3,7 +3,9 @@
 import { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
 import { CiLogin } from 'react-icons/ci';
+import { BiSolidError } from "react-icons/bi";
 import '../globals.css';
+import LoginModal from '../scripts/modal/login';
 
 export default function HomePage() {
   const { data: session } = useSession();
@@ -26,15 +28,10 @@ export default function HomePage() {
                 <h1>반가워요, {session.user.name}님!</h1>
               </div>
               <div className='hello'>
-                <p><br></br>안녕하세요, 팬치와 이파리 여러분!</p>
-                <p>Waktaverse Videos에 오신 것을 환영해요!</p>
-                <p><br></br>아래 버튼으로 로그인하고,<br></br>Waktaverse Videos의 모든 기능을 이용해보세요!</p>
+                <p>유저 이름 : {session.user.name}</p>
+                <p>이메일 : {session.user.email}</p>
+                <p>디스코드 연동 여부 : </p>
               </div>
-              <button onClick={clickLogin} className="login-home">
-                <strong>
-                  <CiLogin className="login-icon" /> 로그인
-                </strong>
-              </button>
             </div>
             
           </section>
@@ -52,7 +49,7 @@ export default function HomePage() {
           <section className="setting_home">
             <div className='banner-container_setting'>
               <div className='banner-section'>
-                <h1>설정 이용에는 로그인이 필요해요!</h1>
+                <h1><BiSolidError/> 설정 이용에는 로그인이 필요해요!</h1>
               </div>
               <div className='hello'>
                 <p><br></br>Waktaverse Videos 계정이 있으신가요?</p>

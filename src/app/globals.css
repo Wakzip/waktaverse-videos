@@ -28,7 +28,7 @@ a {
   background-color: #78d37c;
 }
 
-.home {
+.home_logined {
   display: flex;
   align-items: center;
   text-align: center;

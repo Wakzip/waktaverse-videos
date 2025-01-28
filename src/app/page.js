@@ -24,7 +24,7 @@ export default function HomePage() {
     <>
       {session ? (
         <>
-        <section className="home">
+        <section className="home_logined">
             <div className='banner-container_logined'>
               <div className='banner-section-logined'>
                 <h1>안녕하세요, <span className='highlight_login'>{session.user.name}</span>님!</h1>
