@@ -32,6 +32,9 @@ export default function LoginModal({show, clickLogin}) {
                   <FaDiscord className="login-icon" /> Discord 계정으로 로그인
                 </button>
               </div>
+              <div className='policy'>
+                <p className='policy_text'>로그인 시 <a className='policy_link' href='/policy'>이용약관</a>과 <a className='policy_link' href='/privacy'>개인정보 처리약관</a>에 동의한 것으로 간주합니다.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-'use client';
+/**'use client';
 
 import { useEffect, useState } from 'react';
 
@@ -20,4 +20,4 @@ export default function RenderInfo() {
       <p className='info_rander'>Build : {info.renderId||'None'}ㅣFinal render : {info.renderTimestamp||'None'}</p>
     </div>
   );
-}
+} **/
