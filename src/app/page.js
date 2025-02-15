@@ -7,6 +7,7 @@ import { useSession } from 'next-auth/react';
 import { CiLogin } from 'react-icons/ci';
 import LoginModal from './scripts/modal/login';
 import InfoRender from './scripts/render-info';
+import Suggest from './scripts/suggest';
 import './globals.css';
 
 export default function HomePage() {
@@ -28,23 +29,20 @@ export default function HomePage() {
             <div className='banner-container_logined'>
               <div className='banner-section-logined'>
                 <h1>안녕하세요, <span className='highlight_login'>{session.user.name}</span>님!</h1>
+                <p className='bannner_section_subtitle'>오늘 이파리님을 위한 추천이에요!</p>
               </div>
-              <div className='hello'>
-                <p><br></br>안녕하세요, 팬치와 이파리 여러분!</p>
-                <p>Waktaverse Videos에 오신 것을 환영해요!</p>
-                <p><br></br>아래 버튼으로 로그인하고,<br></br>Waktaverse Videos의 모든 기능을 이용해보세요!</p>
-              </div>
-              <button onClick={clickLogin} className="login-home">
-                <strong>
-                  <CiLogin className="login-icon" /> 로그인
-                </strong>
-              </button>
             </div>
-            <img src="/wakta_videos_home_banner.png" alt="배너 이미지" className='home_banner_picture'/>
+            <div className='home_suggest_videos'>
+              <div className='suggest_video'>
+
+              </div>
+            </div>
           </section>
           <section className="video">
-            <h1 className='video_section_title'>영상</h1>
-            <p className='video_section_subtitle'></p>
+            <div className='video_section'>
+              <h1 className='video_section_title'>오늘 새로 등록된 영상이에요!</h1>
+              <p className='video_section_subtitle'>따끈따끈한 새 영상을 놓치지 마세요!</p>
+            </div>
           </section>
           <section className="playlist">
             
