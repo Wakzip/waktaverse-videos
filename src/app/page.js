@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Banner } from './scripts/banner';
 import PlaylistCard from './scripts/playlistcard';
 import { useSession } from 'next-auth/react';
@@ -11,10 +12,17 @@ import Suggest from './scripts/suggest';
 import './globals.css';
 
 export default function HomePage() {
+  const router = useRouter();
+  const currentDate = new Date();
   const { data: session } = useSession();
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [currentPath, setCurrentPath] = useState('');
+  var months = currentDate.getMonth() + 1
+
+  const playlist_music_monthly = () => {
+    router.push(`/playlist/new?type=music_${months}`);
+  };
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
@@ -78,12 +86,66 @@ export default function HomePage() {
           </section>
           <section className="video">
             <div className='video_section'>
-              <h1 className='video_section_title'>오늘 새로 등록된 영상이에요!</h1>
+              <h1 className='video_section_title'>✨오늘 새로 등록된 영상이에요!</h1>
               <p className='video_section_subtitle'>따끈따끈한 새 영상을 놓치지 마세요!</p>
+            </div>
+          </section>
+          <section className="profile">
+            <div className='profile_section'>
+              <h1 className='profile_section_title'>🔗프로필 바로가기</h1>
+              <p className='profile_section_subtitle'>왁굳형과 이세계아이돌 분들의 프로필로 바로 이동해 보세요!</p>
+              <div className='profile_link'>
+                <div className='profile_button_woowakgood'>
+                  <div className='profile_p'>
+                    <p>우왁굳</p>
+                  </div>
+                </div>
+                <div className='profile_button_ine'>
+                  <div className='profile_p'>
+                    <p>아이네</p>
+                  </div>
+                </div>
+                <div className='profile_button_jingburger'>
+                  <div className='profile_p'>
+                    <p>징버거</p>
+                  </div>
+                </div>
+                <div className='profile_button_lilpa'>
+                  <div className='profile_p'>
+                    <p>릴파</p>
+                  </div>
+                </div>
+                <div className='profile_button_jururu'>
+                  <div className='profile_p'>
+                    <p>주르르</p>
+                  </div>
+                </div>
+                <div className='profile_button_gosegu'>
+                  <div className='profile_p'>
+                    <p>고세구</p>
+                  </div>
+                </div>
+                <div className='profile_button_viichan'>
+                  <div className='profile_p'>
+                    <p>비챤</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
           <section className="playlist">
             
+          </section>
+          <section className="music">
+            <div className='music_inline'>
+              <div className='music_section'>
+                <h1 className='music_section_title'>🎵이번달에 팬치와 이파리분들이 가장 많이 들은 노래 Top 10은?</h1>
+                <p className='music_section_subtitle'>바로바로... 아래를 확인해보세요!</p>
+              </div>
+              <div className='music_playlist' onClick={playlist_music_monthly}>
+                  <p>내 플레이리스트에 저장하기</p>
+              </div>
+            </div>
           </section>
           <footer>
             <div className='footer-section'>
