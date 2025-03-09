@@ -95,41 +95,41 @@ export default function HomePage() {
               <h1 className='profile_section_title'>🔗프로필 바로가기</h1>
               <p className='profile_section_subtitle'>왁굳형과 이세계아이돌 분들의 프로필로 바로 이동해 보세요!</p>
               <div className='profile_link'>
-                <div className='profile_button_woowakgood'>
-                  <div className='profile_p'>
-                    <p>우왁굳</p>
+                  <div className='profile_button_woowakgood'>
+                    <div className='profile_p_woowakgood'>
+                      <h3>우왁굳</h3>
+                    </div>
                   </div>
-                </div>
-                <div className='profile_button_ine'>
-                  <div className='profile_p'>
-                    <p>아이네</p>
+                  <div className='profile_button_ine'>
+                    <div className='profile_p_ine'>
+                      <h3>아이네</h3>
+                    </div>
                   </div>
-                </div>
-                <div className='profile_button_jingburger'>
-                  <div className='profile_p'>
-                    <p>징버거</p>
+                  <div className='profile_button_jingburger'>
+                    <div className='profile_p_jingburger'>
+                      <h3>징버거</h3>
+                    </div>
                   </div>
-                </div>
-                <div className='profile_button_lilpa'>
-                  <div className='profile_p'>
-                    <p>릴파</p>
+                  <div className='profile_button_lilpa'>
+                    <div className='profile_p_lilpa'>
+                      <h3>릴파</h3>
+                    </div>
                   </div>
-                </div>
-                <div className='profile_button_jururu'>
-                  <div className='profile_p'>
-                    <p>주르르</p>
+                  <div className='profile_button_jururu'>
+                    <div className='profile_p_jururu'>
+                      <h3>주르르</h3>
+                    </div>
                   </div>
-                </div>
-                <div className='profile_button_gosegu'>
-                  <div className='profile_p'>
-                    <p>고세구</p>
+                  <div className='profile_button_gosegu'>
+                    <div className='profile_p_gosegu'>
+                      <h3>고세구</h3>
+                    </div>
                   </div>
-                </div>
-                <div className='profile_button_viichan'>
-                  <div className='profile_p'>
-                    <p>비챤</p>
+                  <div className='profile_button_viichan'>
+                    <div className='profile_p_viichan'>
+                      <h3>비챤</h3>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
           </section>

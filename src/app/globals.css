@@ -118,78 +118,197 @@ a {
   align-items: center;
 }
 
-.profile_p {
-  margin: 90px 0 0 50px;
+.profile_a {
+  height: 150px;
+}
+
+.profile_p_woowakgood {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
+}
+
+.profile_p_ine {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
+}
+
+.profile_p_jingburger {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
+}
+
+.profile_p_lilpa {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
+}
+
+.profile_p_jururu {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
+}
+
+.profile_p_gosegu {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
+}
+
+.profile_p_viichan {
+  width: 100%;
+  margin: 150px 0 0 0px;
+  cursor: default;
 }
 
 .profile_button_woowakgood {
   background-image: url(https://waktaverse-videos.vercel.app/profile/woowakgood_150.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_woowakgood:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #1645328a;
+  transition: 0.5s;
 }
 
 .profile_button_ine {
   background-image: url(https://waktaverse-videos.vercel.app/profile/ine.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_ine:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #892be28a;
+  transition: 0.5s;
 }
 
 .profile_button_jingburger {
   background-image: url(https://waktaverse-videos.vercel.app/profile/jingburger.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_jingburger:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #f0a9578a;
+  transition: 0.5s;
 }
 
 .profile_button_lilpa {
   background-image: url(https://waktaverse-videos.vercel.app/profile/lilpa.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_lilpa:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #0000808a;
+  transition: 0.5s;
 }
 
 .profile_button_jururu {
   background-image: url(https://waktaverse-videos.vercel.app/profile/jururu.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_jururu:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #ff008c8a;
+  transition: 0.5s;
 }
 
 .profile_button_gosegu {
   background-image: url(https://waktaverse-videos.vercel.app/profile/gosegu.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_gosegu:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #467ec68a;
+  transition: 0.5s;
 }
 
 .profile_button_viichan {
   background-image: url(https://waktaverse-videos.vercel.app/profile/viichan.png);
   border-radius: 100%;
   background-size: contain;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-top: 10px;
   height: 150px;
   width: 150px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.profile_button_viichan:hover {
+  margin-left: 110px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: #95c1008a;
+  transition: 0.5s;
 }
 
 .music {
@@ -229,7 +348,7 @@ a {
 }
 
 .music_playlist p {
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 10%;
 }
 
