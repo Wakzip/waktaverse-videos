@@ -96,49 +96,49 @@ export default function HomePage() {
               <h1 className='profile_section_title'>🔗프로필 바로가기</h1>
               <p className='profile_section_subtitle'>왁굳형과 이세계아이돌 분들의 프로필로 바로 이동해 보세요!</p>
               <div className='profile_link'>
-                <Link className='profile_link_a' href='/profile/woowakgood'>
+                <Link className='profile_link_a' href='/artist/woowakgood'>
                   <div className='profile_button_woowakgood'>
                     <div className='profile_p_woowakgood'>
                       <h3>우왁굳</h3>
                     </div>
                   </div>
                 </Link>
-                <Link className='profile_link_a' href='/profile/ine'>
+                <Link className='profile_link_a' href='/artist/ine'>
                   <div className='profile_button_ine'>
                     <div className='profile_p_ine'>
                       <h3>아이네</h3>
                     </div>
                   </div>
                 </Link>
-                <Link className='profile_link_a' href='/profile/jingburger'>
+                <Link className='profile_link_a' href='/artist/jingburger'>
                   <div className='profile_button_jingburger'>
                     <div className='profile_p_jingburger'>
                       <h3>징버거</h3>
                     </div>
                   </div>
                 </Link>
-                <Link className='profile_link_a' href='/profile/lilpa'>
+                <Link className='profile_link_a' href='/artist/lilpa'>
                   <div className='profile_button_lilpa'>
                     <div className='profile_p_lilpa'>
                       <h3>릴파</h3>
                     </div>
                   </div>
                 </Link>
-                <Link className='profile_link_a' href='/profile/jururu'>
+                <Link className='profile_link_a' href='/artist/jururu'>
                   <div className='profile_button_jururu'>
                     <div className='profile_p_jururu'>
                       <h3>주르르</h3>
                     </div>
                   </div>
                 </Link>
-                <Link className='profile_link_a' href='/profile/gosegu'>
+                <Link className='profile_link_a' href='/artist/gosegu'>
                   <div className='profile_button_gosegu'>
                     <div className='profile_p_gosegu'>
                       <h3>고세구</h3>
                     </div>
                   </div>
                 </Link>
-                <Link className='profile_link_a' href='/profile/viichan'>
+                <Link className='profile_link_a' href='/artist/viichan'>
                   <div className='profile_button_viichan'>
                     <div className='profile_p_viichan'>
                       <h3>비챤</h3>
