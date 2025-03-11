@@ -118,6 +118,11 @@ a {
   align-items: center;
 }
 
+.profile_link_a {
+  display: flex;
+  align-items: center;
+}
+
 .profile_a {
   height: 150px;
 }
