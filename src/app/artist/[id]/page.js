@@ -18,13 +18,15 @@ export default function Profile({ params }) {
   let { name } = ""
   let { banner } = ""
   let { channels } = []
+  let { artist } = ""
 
   if (id == "woowakgood") {
     name = "우왁굳"
     banner = "https://waktaverse-videos.vercel.app/shimhaedoo_banner.png"
+    artist = "https://waktaverse-videos.vercel.app/woowakgood_150.png"
     channels = [
-      { name: "우왁굳", img: "https://example.com/image1.jpg" },
-      { name: "우왁굳의 종합게임", img: "https://example.com/image2.jpg" }
+      { name: "우왁굳", img: "https://yt3.googleusercontent.com/8qJyQpSS6YLADyM5T6afKkpCsGtC3x_4_SSJWTNNO3qKX9FmlRRBZbO7VFy8IegO_717mU7zaqM=s160-c-k-c0x00ffffff-no-rj" },
+      { name: "우왁굳의 종합게임", img: "https://yt3.googleusercontent.com/uEylUkZkTZFkl5utEME_6SS4_NTnMAoqKx95KQRXefzvgIF1CIwJEVvK0mUyXGrbAqLOjxF-wbQ=s160-c-k-c0x00ffffff-no-rj" }
     ]
   }
 
@@ -74,6 +76,7 @@ export default function Profile({ params }) {
             <div className='artist_profile'>
               <div className='artist_container'>
                 <img src={banner} alt="배너 이미지" className='artist_banner'/>
+                <img src={artist} alt="아티스트 이미지" className='artist_img'/>
                 <h1 className='artist_a'>{name}</h1>
               </div>
             </div>
