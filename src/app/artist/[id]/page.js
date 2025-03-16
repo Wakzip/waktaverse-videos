@@ -22,13 +22,24 @@ export default function Profile({ params }) {
 
   if (id == "woowakgood") {
     name = "우왁굳"
-    banner = "https://waktaverse-videos.vercel.app/shimhaedoo_banner.png"
-    artist = "https://waktaverse-videos.vercel.app/woowakgood_150.png"
+    banner = "https://waktaverse-videos.vercel.app/artist/shimhaedoo_banner.png"
+    artist = "https://waktaverse-videos.vercel.app/artist/woowakgood.png"
     channels = [
       { name: "우왁굳", img: "https://yt3.googleusercontent.com/8qJyQpSS6YLADyM5T6afKkpCsGtC3x_4_SSJWTNNO3qKX9FmlRRBZbO7VFy8IegO_717mU7zaqM=s160-c-k-c0x00ffffff-no-rj" },
       { name: "우왁굳의 종합게임", img: "https://yt3.googleusercontent.com/uEylUkZkTZFkl5utEME_6SS4_NTnMAoqKx95KQRXefzvgIF1CIwJEVvK0mUyXGrbAqLOjxF-wbQ=s160-c-k-c0x00ffffff-no-rj" }
     ]
   }
+
+  if (id == "ine") {
+    name = "아이네"
+    banner = "https://waktaverse-videos.vercel.app/shimhaedoo_banner.png"
+    artist = "https://waktaverse-videos.vercel.app/artist/ine.png"
+    channels = [
+      { name: "우왁굳", img: "https://yt3.googleusercontent.com/8qJyQpSS6YLADyM5T6afKkpCsGtC3x_4_SSJWTNNO3qKX9FmlRRBZbO7VFy8IegO_717mU7zaqM=s160-c-k-c0x00ffffff-no-rj" },
+      { name: "우왁굳의 종합게임", img: "https://yt3.googleusercontent.com/uEylUkZkTZFkl5utEME_6SS4_NTnMAoqKx95KQRXefzvgIF1CIwJEVvK0mUyXGrbAqLOjxF-wbQ=s160-c-k-c0x00ffffff-no-rj" }
+    ]
+  }
+
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
