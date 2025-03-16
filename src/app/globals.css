@@ -357,7 +357,8 @@ a {
 }
 
 .artist_img {
-
+  width: 50%;
+  margin-top: 22px;
 }
 
 .artist_menu {
@@ -414,7 +415,7 @@ a {
 }
 
 .artist_a {
-  margin-top: 160px;
+  margin-top: 10px;
 }
 
 .music {
