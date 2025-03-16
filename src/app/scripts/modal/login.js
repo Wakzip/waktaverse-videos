@@ -19,7 +19,7 @@ export default function LoginModal({show, clickLogin}) {
               <div className='login_notice'>
                 <div className='container_notice'>
                   <h4 className='notice_header'><span className='notice_icon'><CiCircleInfo className='google_icon'/></span>네이버 로그인 지원 관련 안내</h4>
-                  <p>네이버 로그인은 현재 준비 중에 있습니다.<br></br>잠시 기다려주세요!</p>
+                  <p>네이버 로그인은 현재 준비 중에 있습니다!<br></br>서비스 이용에 불편을 드려 죄송합니다.</p>
                 </div>
               </div>
               <div>
