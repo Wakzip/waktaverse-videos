@@ -588,7 +588,7 @@ a {
   padding: 10px 70px;
   border-radius: 10px;
   cursor: pointer;
-  border: solid 2px;
+  border: solid 2px gray;
 }
 
 .login-btn_naver {
