@@ -32,11 +32,6 @@ export default function LoginModal({show, clickLogin}) {
                   <SiNaver className="login-icon" /> 네이버 계정으로 로그인
                 </button>
               </div>
-              <div>
-                <button onClick={() => signIn('discord')} className="login-btn_discord">
-                  <FaDiscord className="login-icon" /> 디스코드 계정으로 로그인
-                </button>
-              </div>
               <div className='policy'>
                 <p className='policy_text'>로그인 시 <a className='policy_link' href='/policy'>이용약관</a>과 <a className='policy_link' href='/privacy'>개인정보 처리약관</a>에 동의한 것으로 간주합니다.</p>
               </div>
