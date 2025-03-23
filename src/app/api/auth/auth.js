@@ -5,4 +5,5 @@ import Naver from "next-auth/providers/naver"
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google, Naver, Discord],
+  debug: true,
 })
