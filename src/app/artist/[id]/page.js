@@ -114,27 +114,29 @@ export default function Profile({ params }) {
     <>
       {session ? (
         <>
-        <section className="home_logined">
-            <div className='banner-container_logined'>
-              <div className='banner-section-logined'>
-                <h1>안녕하세요, <span className='highlight_login'>{session.user.name}</span>님!</h1>
-                <p className='bannner_section_subtitle'>오늘 이파리님을 위한 추천이에요!</p>
+<section className="artist_page">
+            <div className='artist_profile'>
+              <div className='artist_container'>
+                <img src={banner} alt="배너 이미지" className='artist_banner'/>
+                <img src={artist} alt="아티스트 이미지" className='artist_img' width={image_sizew}/>
+                <h1 className='artist_a'>{name}</h1>
               </div>
             </div>
-            <div className='home_suggest_videos'>
-              <div className='suggest_video'>
-
+            <div className='artist_menu'>
+              <div className="artist_channels">
+                <ul className="channel_list_container">
+                  {channels.map((channel, index) => (
+                    <li key={index} className="channel_list">
+                      <img src={channel.img} alt={channel.name} />
+                      <span className="channel_name">{channel.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className='artist_videos'>
+                <h1></h1>
               </div>
             </div>
-          </section>
-          <section className="video">
-            <div className='video_section'>
-              <h1 className='video_section_title'>오늘 새로 등록된 영상이에요!</h1>
-              <p className='video_section_subtitle'>따끈따끈한 새 영상을 놓치지 마세요!</p>
-            </div>
-          </section>
-          <section className="playlist">
-            
           </section>
           <footer>
             <div className='footer-section'>
