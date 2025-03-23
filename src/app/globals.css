@@ -580,24 +580,32 @@ a {
 }
 
 .login-btn_google {
+  width: 312px;
+  height: 38px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
   padding: 10px 70px;
   border-radius: 10px;
   cursor: pointer;
+  border: solid 2px;
 }
 
 .login-btn_naver {
+  width: 312px;
+  height: 38px;
   background-color: #32CD32;
   color: white;
   border: none;
+  margin-top: 10px;
   padding: 10px 70px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .login-btn_discord {
+  width: 312px;
+  height: 38px;
   background-color: #1900ff;
   color: white;
   border: none;
@@ -605,16 +613,6 @@ a {
   padding: 10px 70px;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.login-btn_naver {
-  background-color: green;
-  color: white;
-  border: none;
-  margin-top: 10px;
-  padding: 10px 74.5px;
-  border-radius: 10px;
-  pointer-events: none;
 }
 
 .login-btn-home {
