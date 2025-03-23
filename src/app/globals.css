@@ -580,6 +580,15 @@ a {
 }
 
 .login-btn_google {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-btn_naver {
   background-color: #32CD32;
   color: white;
   border: none;

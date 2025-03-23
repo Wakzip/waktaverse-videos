@@ -24,12 +24,17 @@ export default function LoginModal({show, clickLogin}) {
               </div>
               <div>
                 <button onClick={() => signIn('google')} className="login-btn_google">
-                  <FaGoogle className="login-icon" /> Google 계정으로 로그인
+                  <FaGoogle className="login-icon" /> 구글 계정으로 로그인
+                </button>
+              </div>
+              <div>
+                <button onClick={() => signIn('naver')} className="login-btn_naver">
+                  <SiNaver className="login-icon" /> 네이버 계정으로 로그인
                 </button>
               </div>
               <div>
                 <button onClick={() => signIn('discord')} className="login-btn_discord">
-                  <FaDiscord className="login-icon" /> Discord 계정으로 로그인
+                  <FaDiscord className="login-icon" /> 디스코드 계정으로 로그인
                 </button>
               </div>
               <div className='policy'>
