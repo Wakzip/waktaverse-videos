@@ -14,7 +14,6 @@
     "jsonwebtoken": "^9.0.2",
     "next": "14.2.11",
     "next-auth": "^5.0.0-beta.20",
-    "oauth4webapi": "^2.10.4",
     "react": "^18.3.1",
     "react-calendar": "^5.1.0",
     "react-dom": "^18.3.1",
@@ -27,6 +26,6 @@
     "tailwindcss": "^3.4.14"
   },
   "overrides": {
-    "oauth4webapi": "2.10.4"
+    "oauth4webapi": "npm:@jacobkim/oauth4webapi@^2.10.4"
   }
 }
